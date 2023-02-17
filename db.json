@@ -1,0 +1,38 @@
+{
+    "characters": [
+      {
+        "id": 1,
+        "name": "Darth Vader",
+        "race": "Human",
+        "role": "Sith",
+        "faction": "The Empire",
+        "image":  "https://www.quever.news/u/fotografias/m/2020/11/3/f848x477-2650_60453_5027.jpg",
+        "ship": {
+          "name": "Tie Fighter",
+          "image": "https://lumiere-a.akamaihd.net/v1/images/vaders-tie-fighter_8bcb92e1.jpeg?region=0%2C147%2C1560%2C878&width=768"
+        }
+      }, {
+        "id": 2,
+        "name": "Luke Skywalker",
+        "race": "Human",
+        "role": "Jedi",
+        "faction": "The Rebellion",
+        "image": "https://static.wikia.nocookie.net/esstarwars/images/d/dd/Lukeonskiff.png/revision/latest/scale-to-width-down/220?cb=20180709043103",
+        "ship":  {
+          "name": "Millenium Falcon",
+          "image": "https://static.wikia.nocookie.net/esstarwars/images/8/80/X-wing_Fathead.png/revision/latest/scale-to-width-down/350?cb=20190624005938"
+        }
+      }, {
+        "id": 3,
+        "name": "Han Solo",
+        "race": "Human",
+        "role": "Smuggler",
+        "faction": "The Rebellion",
+        "image": "https://static.wikia.nocookie.net/esstarwars/images/f/fe/Han_Solo%27s_blaster.jpg/revision/latest/scale-to-width-down/350?cb=20151030182246",
+        "ship": {
+          "name": "X-Wing",
+          "image": "https://static.wikia.nocookie.net/esstarwars/images/5/52/Millennium_Falcon_Fathead_TROS.png/revision/latest/scale-to-width-down/350?cb=20191220220841"
+        }
+      } 
+    ]
+}
