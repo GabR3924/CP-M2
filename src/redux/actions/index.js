@@ -14,7 +14,7 @@ export const GET_SHIPS = "GET_SHIPS";
 // por lo tanto, necesitamos ese "delay" para despachar nuestra action hasta que la data nos llegue.
 // Vas a tener que usar la funcion "dispatch" recibida en la funcion interna para despachar la action que
 // va a llegar a nuestro reducer.
-// Acá pueden ver un poco mejor la explicación y algunos ejemplos: https://github.com/reduxjs/redux-thunk
+// Acá pueden ver un poco mejor la explicación y algunos ejemplos: 
 //
 // NOTA:
 //      Para obtener la informacion del detalle recorda utilizar la ruta http://localhost:3001/character/:id
@@ -29,7 +29,23 @@ let id = 4;
 // 🚨 IMPORTANTE SI USAN PROMESAS HAY QUE RETORNARLAS! LOS TESTS PUEDEN FALLAR SI NO LO HACEN 🚨
 
 
-export const getCharacters = () => {};
+export const getCharacters = () => {
+    return function(dispath){
+        axios.get(`http://localhost:3001/character/${id}`)
+    .then(response => {
+      dispatch({
+        type: 'FETCH_CHARACTER_SUCCESS',
+        payload: response.data
+      });
+    })
+    .catch(error => {
+      dispatch({
+        type: 'FETCH_CHARACTER_FAILURE',
+        payload: error.message
+      });
+    });
+    }
+};
 
 export const getCharacterDetail = () => {};
 

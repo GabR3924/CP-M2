@@ -10,6 +10,10 @@ export class Home extends Component {
   render() {
     return (
       <div className="home">
+        <h1>Star Wars</h1>
+        <h2>May the force be with you</h2>
+        <img src="cp-fm2-image.png" alt="star-wars-logo" />
+        <h3>Characters</h3>
       </div>
     );
   }

@@ -9,7 +9,25 @@ import React from "react";
 const CreateCharacter = () => {
   return (
     <div>
+        <form >
+        <label htmlFor="name">Name: </label>
+          <input type="text" name="name" />
 
+          <label htmlFor="race">Race: </label>
+          <input type="text" name="race" />
+
+          <label htmlFor="faction">Faction: </label>
+          <input type="text" name="faction" />
+
+          <label htmlFor="role">Role: </label>
+          <input type="text" name="role" />
+
+          <label htmlFor="ship">Ship: </label>
+          <input type="text" name="ship" />
+
+          <button type="submit">Create Character</button>
+          
+        </form>
     </div>
   );
 };
